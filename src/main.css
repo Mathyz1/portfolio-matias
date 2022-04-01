@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#proyect-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.proyect-card{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 20px auto 50px;
+    margin: 10px 10px;
+    /*padding: 5px;*/
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.proyect-title{
+    grid-column: span 2;
+    grid-row: 2;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+.proyect-image{
+    grid-column: span 2;
+    grid-row: 1;
+    background-color: aquamarine;
+}
+
+.proyect-description{
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+.proyect-btn-demo{
+    grid-row: 4;
+    margin: 5px;
+}
+
+.proyect-btn-code{
+    grid-row: 4;
+    margin: 5px;
+}
+
+.btn{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    /*padding: auto;*/
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.proyect-card p, .proyect-card a{
+    padding: 2px 5px;
+}
