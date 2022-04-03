@@ -2,11 +2,7 @@
 *{
     margin: 0;
     font-family: 'Poppins', sans-serif;
-}
-body{
-    /*background-color: #212025;*/
-    
-
+    color: white;
 }
 
 #fondo{
@@ -16,8 +12,12 @@ body{
     background: linear-gradient( #212025, #1f105e);
     z-index: -1;
 }
+nav{
+    position: relative;
+}
 
 nav ul{
+    position: sticky;
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -28,13 +28,22 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
-
+    transition: all 300ms;
 }
 
-
+nav ul li a:hover{
+    color: #5e35ff;
+    text-decoration: underline;
+}
 
 h2{
     color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#skill-container p{
+    text-align: center;
 }
 
 #project-container{
