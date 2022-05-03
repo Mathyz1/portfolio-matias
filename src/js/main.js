@@ -136,7 +136,6 @@ const sr = ScrollReveal({
     distance: "60px",
     duration: 2500,
     delay: 200,
-    reset: "true"
 })
 
 sr.reveal(".profile__border");
@@ -145,9 +144,9 @@ sr.reveal(".home__data");
 sr.reveal(".home__scroll", {delay: 300});
 
 sr.reveal(".about__header", { delay: 200});
-sr.reveal(".about__img", { delay: 300, origin:'left'});
-sr.reveal(".about__data", { delay: 300, origin:'right'});
-sr.reveal(".about__buttons", { delay: 320, origin:'right'});
+sr.reveal(".about__img", { delay: 300});
+sr.reveal(".about__data", { delay: 300});
+sr.reveal(".about__buttons", { delay: 320});
 
 sr.reveal(".skills", { delay: 200});
 sr.reveal(".skills__container", { delay: 300});
