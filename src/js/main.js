@@ -135,25 +135,25 @@ const sr = ScrollReveal({
     origin: "top",
     distance: "60px",
     duration: 2500,
-    delay: 200,
+    delay: 150,
 })
 
 sr.reveal(".profile__border");
 sr.reveal(".home__data");
 
-sr.reveal(".home__scroll", {delay: 300});
+sr.reveal(".home__scroll", {delay: 250});
 
-sr.reveal(".about__header", { delay: 200});
-sr.reveal(".about__img", { delay: 300});
-sr.reveal(".about__data", { delay: 300});
-sr.reveal(".about__buttons", { delay: 320});
+sr.reveal(".about__header");
+sr.reveal(".about__img", { delay: 250});
+sr.reveal(".about__data", { delay: 250});
+sr.reveal(".about__buttons", { delay: 270});
 
-sr.reveal(".skills", { delay: 200});
-sr.reveal(".skills__container", { delay: 300});
+sr.reveal(".skills");
+sr.reveal(".skills__container", { delay: 250});
 
-sr.reveal(".portfolio", { delay: 200});
-sr.reveal(".projects__card", { delay: 250});
+sr.reveal(".portfolio");
+sr.reveal(".projects__card", { delay: 200});
 
-sr.reveal(".contact", { delay: 200});
-sr.reveal(".contact__information", { delay: 300});
-sr.reveal(".contact__form", { delay: 400});
+sr.reveal(".contact");
+sr.reveal(".contact__information", { delay: 250});
+sr.reveal(".contact__form", { delay: 350});

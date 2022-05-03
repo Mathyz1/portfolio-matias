@@ -308,8 +308,11 @@ img{
 
 /*===================== PROFILE ==================================================================*/
 .profile__img{
-    display: flex;
-    justify-self: auto;
+    /*display: flex;
+    justify-self: auto;*/
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
 }
 
 .profile__perfil{
@@ -338,6 +341,7 @@ img{
     border-radius: 50%;
     display: grid;
     place-items: center;
+    grid-column: 2/3;
 }
 
 
@@ -776,6 +780,7 @@ img{
     }
 
     .profile__img{
+        display: flex;
         justify-self:center;
     }
 
@@ -865,6 +870,7 @@ img{
     }
 
     .profile__img{
+        display: flex;
         justify-self:center;
     }
 
@@ -931,6 +937,7 @@ img{
     }
 
     .profile__img{
+        display: flex;
         justify-self:center;
     }
 
