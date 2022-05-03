@@ -116,3 +116,16 @@ themeButton.addEventListener("click",()=>{
     localStorage.setItem("selected-theme", getCurrentTheme());
     localStorage.setItem("selected-icon", getCurrentIcon());
 })
+
+/*=================== ENVIAR FORMULARIO ===================*/
+
+document.getElementById("btn-form").onclick = (e) => {
+    e.preventDefault();
+    const email = document.getElementById("email");
+    const nombre = document.getElementById("nombre");
+    const asunto = document.getElementById("asunto");
+    const mensaje = document.getElementById("mensaje");
+    window.location.href=`mailto:matiasnrivero96@gmail.com?
+                            subject=${asunto}&body=Nombre%3${nombre}%0D%0AEmail%3${email}%0D%0AMensaje%3${mensaje}`
+    document.getElementById("form").submit()
+};

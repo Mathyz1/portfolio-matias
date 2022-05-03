@@ -71,16 +71,13 @@
                         </a>
                     </div>
 
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <mask id="mask0" mask-type="alpha">
-                                <path fill="#8A3FFC" d="M64.6,3.8C64.6,28.7,32.3,57.3,1.1,57.3C-30,57.3,-60,28.7,-60,3.8C-60,-21,-30,-42,1.1,-42C32.3,-42,64.6,-21,64.6,3.8Z" transform="translate(100 100)" />
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M64.6,3.8C64.6,28.7,32.3,57.3,1.1,57.3C-30,57.3,-60,28.7,-60,3.8C-60,-21,-30,-42,1.1,-42C32.3,-42,64.6,-21,64.6,3.8Z" transform="translate(100 100)" />
-                                <image class="home__blob-img" x="60" y="30" xlink:href="./src/images/perfil.webp"/>
-                            </g>
-                          </svg>
+                    <div class="profile__img">
+                        <div class="profile__border">
+                            <div class="profile__perfil">
+                                <img src="./src/images/perfil.webp" alt="foto de perfil">
+                            </div>
+
+                        </div>
                     </div>
 
                     <div class="home__data">
@@ -88,7 +85,7 @@
                         <h3 class="home__subtitle">Fontend developer</h3>
                         <p class="home__description">aca va una descripcion mia jaja</p>
                         <a href="#contactme" class="button button--flex">
-                            Contact Me <i class="uil uil-message button__icon"></i>
+                            Contáctame <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -105,32 +102,19 @@
         <!--================== ABOUT ==================-->
         <section class="about section" id="about">
             <h2 class="section__title">Sobre mi</h2>
-            <span class="section__subtitle">My Introduction</span>
+            <span class="section__subtitle">Mi Introduccion</span>
             <div class="about__container container grid">
                 <img src="./src/images/perfil.webp" alt="" class="about__img">
                 <div class="about__data">
-                    <p class="about__description">Hola mi nombre es Matias y soy Analista Programador Universitario, actualmente sigo estudiando para el titulo de Licenciado en sistemas en la Unla.</p>
+                    <p class="about__description">Hola mi nombre es Matias, soy Analista Programador 
+                        Universitario y actualmente me encuentro estudiando para el titulo de Licenciado
+                         en Sistemas en la Universidad Nacional de Lanús.</p>
                     
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">08+</span>
-                            <span class="about__info-name">Years <br> experience</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">20+</span>
-                            <span class="about__info-name">Completed <br> project</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">05+</span>
-                            <span class="about__info-name">Companies <br> worked</span>
-                        </div>
-                    </div>
+                    
 
                     <div class="about__buttons">
                         <a download="" href="./src/pdf/CV_Matias_Rivero.pdf" class="button button--flex">
-                            Download CV <i class="uil uil-download-alt button__icon"></i>
+                            Descargar CV <i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -303,192 +287,213 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent works</span>
 
-            <div class="portfolio__container container">
+            <div class="portfolio__container container grid">
                 <!--================== PORTFOLIO 1 ==================-->
-                <div class="portfolio__content grid">
-                    <img src="./src/images/img-p1.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Carrito de compras</h3>
-                        <p class="portfolio__description">Aplicacion que simula un carrito de compras donde se hace la actualizacion de el stock, el calculo de precios</p>
-                        
-                        <div class="portfolio__buttons">
-                            <a href="https://github.com/Mathyz1/carrito-de-compras/" class="button button--flex button--small portfolio__button"> 
-                                Codigo <i class="uil uil-brackets-curly button__icon"></i>
-                            </a>
-                            <a href="https://mathyz1.github.io/carrito-de-compras/" class="button button--flex button--small portfolio__button">
-                                Prueba <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <article class="projects__card">
+                    <img src="./src/images/img-p1.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">HTML, CSS, JavaScript</span>
+                            <h3 class="projects__title">Carrito de compras</h3>
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Mathyz1/carrito-de-compras/" class="button button--flex button--small portfolio__button"> 
+                                    Codigo <i class="uil uil-brackets-curly button__icon"></i>
+                                </a>
+                                <a href="https://mathyz1.github.io/carrito-de-compras/" class="button button--flex button--small portfolio__button">
+                                    Prueba <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
-                        
                     </div>
-                </div>
+                </article>
                 <!--================== PORTFOLIO 2 ==================-->
-                <div class="portfolio__content grid">
-                    <img src="./src/images/img-p2.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Componente de tags</h3>
-                        <p class="portfolio__description">Componente que permite escribir tags a medida que presionamos enter</p>
-                        
-                        <div class="portfolio__buttons">
-                            <a href="https://github.com/Mathyz1/componente-de-tags/" class="button button--flex button--small portfolio__button"> 
-                                Codigo <i class="uil uil-brackets-curly button__icon"></i>
-                            </a>
-                            <a href="https://mathyz1.github.io/componente-de-tags/" class="button button--flex button--small portfolio__button">
-                                Prueba <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <article class="projects__card">
+                    <img src="./src/images/img-p2.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">HTML, CSS, JavaScript</span>
+                            <h3 class="projects__title">Sistema de comentarios</h3>
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Mathyz1/sistema-de-comentarios/" class="button button--flex button--small portfolio__button"> 
+                                    Codigo <i class="uil uil-brackets-curly button__icon"></i>
+                                </a>
+                                <a href="https://mathyz1.github.io/sistema-de-comentarios/" class="button button--flex button--small portfolio__button">
+                                    Prueba <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
-                        
                     </div>
-                </div>
+                </article>
                 <!--================== PORTFOLIO 3 ==================-->
-                <div class="portfolio__content grid">
-                    <img src="./src/images/img-p3.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Componente de tags</h3>
-                        <p class="portfolio__description">Componente que permite escribir tags a medida que presionamos enter</p>
-                        <div class="portfolio__buttons">
-                            <a href="https://github.com/Mathyz1/componente-de-tags/" class="button button--flex button--small portfolio__button"> 
-                                Codigo <i class="uil uil-brackets-curly button__icon"></i>
-                            </a>
-                            <a href="https://mathyz1.github.io/componente-de-tags/" class="button button--flex button--small portfolio__button">
-                                Prueba <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <article class="projects__card">
+                    <img src="./src/images/img-p3.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">HTML, CSS, JavaScript</span>
+                            <h3 class="projects__title">Componente de tags</h3>
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Mathyz1/componente-de-tags/" class="button button--flex button--small portfolio__button"> 
+                                    Codigo <i class="uil uil-brackets-curly button__icon"></i>
+                                </a>
+                                <a href="https://mathyz1.github.io/componente-de-tags/" class="button button--flex button--small portfolio__button">
+                                    Prueba <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
                 <!--================== PORTFOLIO 4 ==================-->
-                <div class="portfolio__content grid">
-                    <img src="./src/images/img-p4.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">JSON-to-CSV</h3>
-                        <p class="portfolio__description">Aplicacion que permite convertir codigo JSON a codigo CSV mediante caja de textos</p>
-                        <div class="portfolio__buttons">
-                            <a href="https://github.com/Mathyz1/JSON-to-CSV/" class="button button--flex button--small portfolio__button"> 
-                                Codigo <i class="uil uil-brackets-curly button__icon"></i>
-                            </a>
-                            <a href="https://mathyz1.github.io/JSON-to-CSV/" class="button button--flex button--small portfolio__button">
-                                Prueba <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <article class="projects__card">
+                    <img src="./src/images/img-p4.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">HTML, CSS, JavaScript</span>
+                            <h3 class="projects__title">JSON-to-CSV</h3>
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Mathyz1/JSON-to-CSV/" class="button button--flex button--small portfolio__button"> 
+                                    Codigo <i class="uil uil-brackets-curly button__icon"></i>
+                                </a>
+                                <a href="https://mathyz1.github.io/JSON-to-CSV/" class="button button--flex button--small portfolio__button">
+                                    Prueba <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
                 <!--================== PORTFOLIO 5 ==================-->
-                <div class="portfolio__content grid">
-                    <img src="./src/images/img-p5.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Ta-Te-Ti</h3>
-                        <p class="portfolio__description">El juego del Ta-Te-Ti, donde puedes competir contra la Pc</p>
-                        <div class="portfolio__buttons">
-                            <a href="https://github.com/Mathyz1/Tic-tac-toe/" class="button button--flex button--small portfolio__button"> 
-                                Codigo <i class="uil uil-brackets-curly button__icon"></i>
-                            </a>
-                            <a href="https://mathyz1.github.io/Tic-tac-toe/" class="button button--flex button--small portfolio__button">
-                                Prueba <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <article class="projects__card">
+                    <img src="./src/images/img-p5.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">HTML, CSS, JavaScript</span>
+                            <h3 class="projects__title">Ta-Te-Ti</h3>
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Mathyz1/Tic-tac-toe/" class="button button--flex button--small portfolio__button"> 
+                                    Codigo <i class="uil uil-brackets-curly button__icon"></i>
+                                </a>
+                                <a href="https://mathyz1.github.io/Tic-tac-toe/" class="button button--flex button--small portfolio__button">
+                                    Prueba <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
                 <!--================== PORTFOLIO 6 ==================-->
-                <div class="portfolio__content grid">
-                    <img src="./src/images/img-p6.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Teclado Virtual</h3>
-                        <p class="portfolio__description">Aplicacion que simula un teclado virtual</p>
-                        <div class="portfolio__buttons">
-                            <a href="https://github.com/Mathyz1/teclado-virtual/" class="button button--flex button--small portfolio__button"> 
-                                Codigo <i class="uil uil-brackets-curly button__icon"></i>
-                            </a>
-                            <a href="https://mathyz1.github.io/teclado-virtual/" class="button button--flex button--small portfolio__button">
-                                Prueba <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <article class="projects__card">
+                    <img src="./src/images/img-p6.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">HTML, CSS, JavaScript</span>
+                            <h3 class="projects__title">Teclado Virtual</h3>
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Mathyz1/teclado-virtual/" class="button button--flex button--small portfolio__button"> 
+                                    Codigo <i class="uil uil-brackets-curly button__icon"></i>
+                                </a>
+                                <a href="https://mathyz1.github.io/teclado-virtual/" class="button button--flex button--small portfolio__button">
+                                    Prueba <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
+                
                 <!--================== PORTFOLIO 7 ==================-->
-                <div class="portfolio__content grid">
-                    <img src="./src/images/img-p7.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Componente de Rating</h3>
-                        <p class="portfolio__description">Aplicacion que te permite dar una puntuacion, como tambien te muestra la cantidad de calificaciones que tiene el lugar, como el promedio de estrellas</p>
-                        <div class="portfolio__buttons">
-                            <a href="https://github.com/Mathyz1/Componente-de-rating/" class="button button--flex button--small portfolio__button"> 
-                                Codigo <i class="uil uil-brackets-curly button__icon"></i>
-                            </a>
-                            <a href="https://mathyz1.github.io/Componente-de-rating/" class="button button--flex button--small portfolio__button">
-                                Prueba <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <article class="projects__card">
+                    <img src="./src/images/img-p7.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">HTML, CSS, JavaScript</span>
+                            <h3 class="projects__title">Componente de Rating</h3>
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Mathyz1/Componente-de-rating/" class="button button--flex button--small portfolio__button"> 
+                                    Codigo <i class="uil uil-brackets-curly button__icon"></i>
+                                </a>
+                                <a href="https://mathyz1.github.io/Componente-de-rating/" class="button button--flex button--small portfolio__button">
+                                    Prueba <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
                 <!--================== PORTFOLIO 8 ==================-->
-                <div class="portfolio__content grid">
-                    <img src="./src/images/img-p8.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Contar dias para un evento</h3>
-                        <p class="portfolio__description">App que permite agregar eventos y poder ver cuantos dias faltan</p>
-                        <div class="portfolio__buttons">
-                            <a href="https://github.com/Mathyz1/contar-dias-evento/" class="button button--flex button--small portfolio__button"> 
-                                Codigo <i class="uil uil-brackets-curly button__icon"></i>
-                            </a>
-                            <a href="https://mathyz1.github.io/contar-dias-evento/" class="button button--flex button--small portfolio__button">
-                                Prueba <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <article class="projects__card">
+                    <img src="./src/images/img-p8.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">HTML, CSS, JavaScript</span>
+                            <h3 class="projects__title">Contar dias para un evento</h3>
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Mathyz1/contar-dias-evento/" class="button button--flex button--small portfolio__button"> 
+                                    Codigo <i class="uil uil-brackets-curly button__icon"></i>
+                                </a>
+                                <a href="https://mathyz1.github.io/contar-dias-evento/" class="button button--flex button--small portfolio__button">
+                                    Prueba <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
                 <!--================== PORTFOLIO 9 ==================-->
-                <div class="portfolio__content grid">
-                    <img src="./src/images/img-p9.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Input con Mascara</h3>
-                        <p class="portfolio__description">App que simula una tarjeta de credito, donde se aplican las mascaras de texto para formatear el codigo que se ingresa</p>
-                        <div class="portfolio__buttons">
-                            <a href="https://github.com/Mathyz1/input-con-mascara/" class="button button--flex button--small portfolio__button"> 
-                                Codigo <i class="uil uil-brackets-curly button__icon"></i>
-                            </a>
-                            <a href="https://mathyz1.github.io/input-con-mascara/" class="button button--flex button--small portfolio__button">
-                                Prueba <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <article class="projects__card">
+                    <img src="./src/images/img-p9.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">HTML, CSS, JavaScript</span>
+                            <h3 class="projects__title">Input con Mascara</h3>
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Mathyz1/input-con-mascara/" class="button button--flex button--small portfolio__button"> 
+                                    Codigo <i class="uil uil-brackets-curly button__icon"></i>
+                                </a>
+                                <a href="https://mathyz1.github.io/input-con-mascara/" class="button button--flex button--small portfolio__button">
+                                    Prueba <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
                 <!--================== PORTFOLIO 10 ==================-->
-                <div class="portfolio__content grid">
-                    <img src="./src/images/img-p10.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Aplicacion Pomodoro</h3>
-                        <p class="portfolio__description">App que utiliza la tecnica de ... Pomodoro (buscar)</p>
-                        <div class="portfolio__buttons">
-                            <a href="https://github.com/Mathyz1/AppPomodoro/" class="button button--flex button--small portfolio__button"> 
-                                Codigo <i class="uil uil-brackets-curly button__icon"></i>
-                            </a>
-                            <a href="https://mathyz1.github.io/AppPomodoro/" class="button button--flex button--small portfolio__button">
-                                Prueba <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <article class="projects__card">
+                    <img src="./src/images/img-p10.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">HTML, CSS, JavaScript</span>
+                            <h3 class="projects__title">Aplicacion Pomodoro</h3>
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Mathyz1/AppPomodoro/" class="button button--flex button--small portfolio__button"> 
+                                    Codigo <i class="uil uil-brackets-curly button__icon"></i>
+                                </a>
+                                <a href="https://mathyz1.github.io/AppPomodoro/" class="button button--flex button--small portfolio__button">
+                                    Prueba <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
+                
                 <!--================== PORTFOLIO 11 ==================-->
-                <div class="portfolio__content grid">
-                    <img src="./src/images/img-p2.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Calculadora</h3>
-                        <p class="portfolio__description">App que simula una calculadora basica, permite hacer los 4 calculos basicos</p>
-                        <div class="portfolio__buttons">
-                            <a href="https://github.com/Mathyz1/Calculator/" class="button button--flex button--small portfolio__button"> 
-                                Codigo <i class="uil uil-brackets-curly button__icon"></i>
-                            </a>
-                            <a href="https://mathyz1.github.io/Calculator/" class="button button--flex button--small portfolio__button">
-                                Prueba <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <article class="projects__card">
+                    <img src="./src/images/img-p11.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">HTML, CSS, JavaScript</span>
+                            <h3 class="projects__title">Calculadora</h3>
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/Mathyz1/Calculator/" class="button button--flex button--small portfolio__button"> 
+                                    Codigo <i class="uil uil-brackets-curly button__icon"></i>
+                                </a>
+                                <a href="https://mathyz1.github.io/Calculator/" class="button button--flex button--small portfolio__button">
+                                    Prueba <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
+                
             </div>
         </section>
         <!--==================CONTACT ME==================-->
         <section class="contact section" id="contactme">
-            <h2 class="section__title">Contactame</h2>
+            <h2 class="section__title">Contáctame</h2>
             <span class="section__subtitle">Get in touch</span>
 
             <div class="contact__container container grid">
@@ -503,7 +508,7 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form action="" class="contact__form grid" id="form">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Nombre</label>
@@ -525,7 +530,7 @@
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <a href="#" class="button button--flex" id="btn-form">
                             Enviar <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
