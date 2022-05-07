@@ -128,7 +128,7 @@ btnForm.addEventListener("click", e => {
     const mensaje = encodeURIComponent(document.getElementById("mensaje").value);
     
     window.location.href=`mailto:matiasnrivero96@gmail.com?
-                            subject=${asunto}&body=Nombre%3A${nombre}%0D%0AEmail%3A${email}%0D%0AMensaje%3A${mensaje}`
+                            Subject=${asunto}&body=Nombre%3A${nombre}%0D%0AEmail%3A${email}%0D%0AMensaje%3A${mensaje}`
     document.getElementById("form").submit();
 });
 
