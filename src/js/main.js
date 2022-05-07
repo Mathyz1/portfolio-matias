@@ -126,9 +126,8 @@ btnForm.addEventListener("click", e => {
     const nombre = document.getElementById("nombre");
     const asunto = document.getElementById("asunto");
     const mensaje = document.getElementById("mensaje");
-    console.log(email);
     window.location.href=`mailto:matiasnrivero96@gmail.com?
-                            subject=${asunto.value}&body=Nombre%3A${nombre.value}%0D%0AEmail%3A${email}%0D%0AMensaje%3A${mensaje}`
+                            subject=${asunto.value}&body=Nombre%3A${nombre.value}%0D%0AEmail%3A${email.value}%0D%0AMensaje%3A${mensaje.value}`
     document.getElementById("form").submit();
 });
 
