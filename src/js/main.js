@@ -122,12 +122,13 @@ themeButton.addEventListener("click",()=>{
 const btnForm = document.getElementById("btn-form");
 btnForm.addEventListener("click", e => {
     e.preventDefault();
-    const email = document.getElementById("email");
-    const nombre = document.getElementById("nombre");
-    const asunto = document.getElementById("asunto");
-    const mensaje = document.getElementById("mensaje");
+    const email = encodeURIComponent(document.getElementById("email").value);
+    const nombre = encodeURIComponent(document.getElementById("nombre").value);
+    const asunto = encodeURIComponent(document.getElementById("asunto").value);
+    const mensaje = encodeURIComponent(document.getElementById("mensaje").value);
+    
     window.location.href=`mailto:matiasnrivero96@gmail.com?
-                            subject=${asunto.value}&body=Nombre%3A${nombre.value}%0D%0AEmail%3A${email.value}%0D%0AMensaje%3A${mensaje.value}`
+                            subject=${asunto}&body=Nombre%3A${nombre}%0D%0AEmail%3A${email}%0D%0AMensaje%3A${mensaje}`
     document.getElementById("form").submit();
 });
 
