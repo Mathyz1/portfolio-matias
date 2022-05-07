@@ -119,16 +119,18 @@ themeButton.addEventListener("click",()=>{
 
 /*=================== ENVIAR FORMULARIO ===================*/
 
-document.getElementById("btn-form").onclick = (e) => {
+const btnForm = document.getElementById("btn-form");
+btnForm.addEventListener("click", e => {
     e.preventDefault();
     const email = document.getElementById("email");
     const nombre = document.getElementById("nombre");
     const asunto = document.getElementById("asunto");
     const mensaje = document.getElementById("mensaje");
+    console.log(email);
     window.location.href=`mailto:matiasnrivero96@gmail.com?
-                            subject=${asunto}&body=Nombre%3A${nombre}%0D%0AEmail%3A${email}%0D%0AMensaje%3A${mensaje}`
-    document.getElementById("form").submit()
-};
+                            subject=${asunto.value}&body=Nombre%3A${nombre.value}%0D%0AEmail%3A${email}%0D%0AMensaje%3A${mensaje}`
+    document.getElementById("form").submit();
+});
 
 /*=================== ANIMACION SCROLL REVEAL ===================*/
 const sr = ScrollReveal({
